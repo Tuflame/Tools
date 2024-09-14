@@ -51,7 +51,7 @@ folder_path = "C:/Users/kevin_rkz3370/Desktop/abc/song"
 在終端機或命令提示字元中執行程式碼：
 
 ```bash
-py start.p
+py audio_reverse.py
 ```
 
 ### 4. 完成反轉
