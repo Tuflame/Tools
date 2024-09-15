@@ -23,11 +23,10 @@
 ### 安裝 pydub 及 ffmpeg 的步驟
 
 1. 使用以下命令來安裝 `pydub`：
+
    ```bash
    pip install pydub
    ```
-
-
 2. 安裝並配置 FFmpeg，請參考 [FFmpeg 官方網站](https://ffmpeg.org/download.html) 下載並安裝適合您作業系統的版本。安裝完成後，將 FFmpeg 的執行檔目錄添加到系統的環境變數中。
 
 ## 3. 使用步驟
@@ -36,25 +35,29 @@
 
 請將您想要反轉的 MP3 檔案放入指定的資料夾中，並且這些檔案的命名格式必須包含「正放.mp3」關鍵字，例如：`歌曲名正放.mp3`。
 
-### 2. 修改資料夾路徑
-
-在程式碼中找到以下部分：
-
-```py
-folder_path = "C:/Users/kevin_rkz3370/Desktop/abc/song"
-```
-
-將 `folder_path` 修改為您音檔所在的資料夾路徑。
-
-### 3. 執行程式碼
+### 2. 執行程式碼
 
 在終端機或命令提示字元中執行程式碼：
 
 ```bash
-py start.p
+py auido_reverse.py C::/folder
 ```
 
-### 4. 完成反轉
+C::/folder 請換成你要轉換音訊的資料夾路徑
+
+或是將程式碼中
+
+```py
+folder_path=""
+```
+
+改成自己的路徑後在終端使用
+
+```bash
+py auido_reverse.py
+```
+
+### 3.完成反轉
 
 程式會自動將反轉後的音檔儲存到相同資料夾中，且檔案名稱會自動改為「倒放.mp3」。範例輸出結果：
 

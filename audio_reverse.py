@@ -4,8 +4,15 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 from pydub import AudioSegment
 
+folder_path="C:\Users\kevin_rkz3370\Desktop\song"
+
 # 設定資料夾路徑
-folder_path = "C:/Users/kevin_rkz3370/Desktop/abc/song"
+if len(sys.argv) == 2:
+    folder_path = sys.argv[1]
+elif len(folder_path) == "":
+    print("請輸入資料夾路徑。")
+    exit()
+
 
 if not os.path.isdir(folder_path):
     print("資料夾不存在，請確認路徑是否正確。")
