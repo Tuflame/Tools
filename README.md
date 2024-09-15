@@ -41,6 +41,7 @@
 
 ```bash
 py auido_reverse.py C::/folder
+py audio_reverse.py
 ```
 
 C::/folder 請換成你要轉換音訊的資料夾路徑
